@@ -9,7 +9,7 @@ var valid = true;
 nextbtns.forEach((nextbtn)=>{
     nextbtn.addEventListener("click",()=>{
 
-        if(i<4){
+        if(i<sections.length-1){
             console.log('before '+i);
             var curr = document.querySelector(sections[i]);
             var next = document.querySelector(sections[i+1]);
@@ -42,6 +42,9 @@ backbtn.addEventListener("click",()=>{
         }
         i--;
         console.log('after ' +i);
+    }
+    if(i===0){
+        window.location.replace("https://abhin-2122003.github.io/InstaLPage/#");
     }
 
 });
