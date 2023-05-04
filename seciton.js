@@ -43,8 +43,5 @@ backbtn.addEventListener("click",()=>{
         i--;
         console.log('after ' +i);
     }
-    if(i===0){
-        window.location.replace("https://abhin-2122003.github.io/InstaLPage/#");
-    }
 
 });
