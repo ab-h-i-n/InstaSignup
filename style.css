@@ -10,8 +10,10 @@
 :root{
     --input-background:rgba(128, 128, 128, 0.079);
     --input-border: rgba(128, 128, 128, 0.423);
-    --input-border-active:rgba(128, 128, 128, 0.848);
+    --input-border-active:rgb(50, 50, 50);
     --placeholder-color:rgba(128, 128, 128, 0.379);
+    --primary-blue : #24A0ED;
+    --faded-blue:#24a0edad;
 }
 
 body{
@@ -97,9 +99,10 @@ select{
     padding: 1px;
     background-color: var(--input-background);
 }
+
 span.in{
 
-    color: #24A0ED;
+    color: var(--primary-blue);
     width: 40px;
     height: 100%;
     text-align: center;
@@ -122,10 +125,13 @@ input::placeholder{
     font-weight: 500;
     color: var(--placeholder-color);
 }
+
 p.phn{
     color: grey;
     font-size: .7rem;
 }
+
+
 
 #email{
     display: none;
@@ -160,7 +166,13 @@ p.phn{
     border-radius:5px;
     user-select: none;
 }
-
+.domain:hover,
+.domain:focus{
+    background-color: rgba(128, 128, 128, 0.388);
+}
+.domain.hidden{
+    display: none;
+}
 
 .next{
     width: 100%;
@@ -170,16 +182,19 @@ p.phn{
     outline: none;
     color: white;
     font-weight: 600;
-    background-color: #24A0ED;
+    background-color: var(--primary-blue);
     margin-top:1rem ;
     user-select: none;
+}
+.disable{
+    background-color: var(--faded-blue);
 }
 .fbbtn{
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: .8rem;
-    background-color: #24A0ED;
+    background-color: var(--primary-blue);
     color: white;
     display: flex;
     justify-content: center;
