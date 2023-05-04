@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>SignUp</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined">
+            arrow_back_ios_new
+            </span>
+        <span class="reg">Register</span>
+    </header>
 
+    <div class="lang">
+        <span class="material-symbols-outlined">
+            more_horiz
+            </span>
+            <select>
+                <option value="English(UK)" selected="selected">English(UK)</option>
+            </select>
+    </div>
+
+    <div class="container">
+        <div class="links">
+            <a class="phone link active">PHONE</a>
+            <a class="email link" >EMAIL</a>
+        </div>
+        <div class="form">
+            <div id="phone">
+                <div class="pin">
+                    <span class="in">IN +91</span>
+                    <input type="text" placeholder="Phone number">
+                </div>
+                <p class="phn">You may receive SMS notification from us for security and ligin purposes.</p>
+            </div>
+
+            <div id="email">
+                <input type="text" placeholder="Email address">
+                <div class="domains">
+                    <span class="domain">@gmail.com</span>
+                    <span class="domain">@hotmail.com</span>
+                    <span class="domain">@yahoo.com</span>
+                    <span class="domain">@outlook.com</span>
+                </div>
+            </div>
+            <button class="next">Next</button>
+        </div>
+    </div>
+    <button class="fbbtn">
+        <img src="./images/fblogo.png">
+        Sign Up with Facebook
+    </button>
+<script src="./script.js"></script>
+</body>
+</html>
