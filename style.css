@@ -10,7 +10,7 @@
 :root{
     --input-background:rgba(128, 128, 128, 0.079);
     --input-border: rgba(128, 128, 128, 0.423);
-    --input-border-active:rgb(50, 50, 50);
+    --input-border-active:rgba(50, 50, 50, 0.502);
     --placeholder-color:rgba(128, 128, 128, 0.379);
     --primary-blue : #24A0ED;
     --faded-blue:#24a0edad;
@@ -131,6 +131,10 @@ p.phn{
     font-size: .7rem;
 }
 
+.pin:has(input:focus),
+.pin:hover{
+    border-color: var(--input-border-active);
+}
 
 
 #email{
