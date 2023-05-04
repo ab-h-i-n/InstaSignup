@@ -11,51 +11,174 @@
 </head>
 <body>
     <header>
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined" id="backbtn">
             arrow_back_ios_new
             </span>
         <span class="reg">Register</span>
     </header>
 
-    <div class="lang">
-        <span class="material-symbols-outlined">
-            more_horiz
-            </span>
-            <select>
-                <option value="English(UK)" selected="selected">English(UK)</option>
-            </select>
-    </div>
-
-    <div class="container">
-        <div class="links">
-            <a class="phone link active">PHONE</a>
-            <a class="email link" >EMAIL</a>
+    <section class="section section1">
+        <div class="lang">
+            <span class="material-symbols-outlined">
+                more_horiz
+                </span>
+                <select>
+                    <option value="English(UK)" selected="selected">English(UK)</option>
+                </select>
         </div>
-        <div class="form">
-            <div id="phone">
-                <div class="pin">
-                    <span class="in">IN +91</span>
-                    <input type="tel" pattern="[0-9]{10}"  placeholder="Phone number">
-                </div>
-                <p class="phn">You may receive SMS notification from us for security and ligin purposes.</p>
+    
+        <div class="container">
+            <div class="links">
+                <a class="phone link active">PHONE</a>
+                <a class="email link" >EMAIL</a>
             </div>
-
-            <div id="email">
-                <input type="email" placeholder="Email address">
-                <div class="domains">
-                    <span class="domain">@gmail.com</span>
-                    <span class="domain">@hotmail.com</span>
-                    <span class="domain">@yahoo.com</span>
-                    <span class="domain">@outlook.com</span>
+            <div class="form">
+                <div id="phone">
+                    <div class="pin">
+                        <span class="in">IN +91</span>
+                        <input type="tel" pattern="[0-9]{10}"  placeholder="Phone number">
+                    </div>
+                    <p class="phn">You may receive SMS notification from us for security and login purposes.</p>
                 </div>
+    
+                <div id="email">
+                    <input type="email" placeholder="Email address">
+                    <div class="domains">
+                        <span class="domain">@gmail.com</span>
+                        <span class="domain">@hotmail.com</span>
+                        <span class="domain">@yahoo.com</span>
+                        <span class="domain">@outlook.com</span>
+                    </div>
+                </div>
+                <button class="next fir disable">Next</button>
             </div>
-            <button class="next disable">Next</button>
         </div>
-    </div>
-    <button class="fbbtn">
-        <img src="./images/fblogo.png">
-        Sign Up with Facebook
-    </button>
+        <button class="fbbtn">
+            <img src="./images/fblogo.png">
+            Sign Up with Facebook
+        </button>
+    </section>
+    <section class="section section2">
+        <div class="container">
+            <p class="head">Enter confirmation code</p>
+            <p class="desc">Enter the code we sent to phone number 
+            <a class="change">Change number</a> or 
+            <a class="again">Send SMS message again</a></p>
+        <input type="text" class="code" placeholder="Confirmation code">
+        <button class="next sec disable">Next</button>
+        </div>
+    </section>
+    <section class="section section3">
+        <div class="container">
+            <p class="head">Enter name and password</p>
+            <p class="desc">Add your name so that friends can find you</p>
+            <input type="text" class="name" placeholder="Full Name">
+            <input type="text" class="pass" placeholder="Passowrd">
+            <button class="next thir disable">Next</button>
+        </div>
+    </section>
+    <section class="section section4">
+        <div class="container">
+            <img src="./images/bday.png" class="bday">
+            <p class="head">Add your date of birth</p>
+            <p class="desc">This wonn't be part of your public profile. <br>
+                <a> Why do I need to provide my date of birth?</a> </p>
+            <div class="dob">
+                <select class="month">
+                    <option selected="selected">Jan</option>
+                    <option >Feb</option>
+                    <option >Mar</option>
+                    <option >Apr</option>
+                    <option >May</option>
+                    <option >Jun</option>
+                    <option >Jul</option>
+                    <option >Aug</option>
+                    <option >Sep</option>
+                    <option >Oct</option>
+                    <option >Nov</option>
+                    <option >Dec</option>
+                </select>
+                <select class="day">
+                    <option selected="selected">1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                    <option >6</option>
+                    <option >7</option>
+                    <option >8</option>
+                    <option >9</option>
+                    <option >10</option>
+                    <option >11</option>
+                    <option >12</option>
+                    <option >13</option>
+                    <option >14</option>
+                    <option >15</option>
+                    <option >16</option>
+                    <option >17</option>
+                    <option >18</option>
+                    <option >19</option>
+                    <option >20</option>
+                    <option >21</option>
+                    <option >22</option>
+                    <option >23</option>
+                    <option >24</option>
+                    <option >25</option>
+                    <option >26</option>
+                    <option >27</option>
+                    <option >28</option>
+                    <option >29</option>
+                    <option >30</option>
+                    <option >31</option>
+                </select>
+                <select class="year">
+                    <option selected="selected">2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+
+                </select>
+            </div>
+            <p class="desc sm">
+                You need to enter the date you were born on. <br>
+                 Use your own date of birth, even if this account is for a business, pet or something else
+            </p>
+            <button class="next fou disable">Next</button>
+        </div>
+    </section>
+    <section class="section section5">
+        <div class="container">
+            <p class="head">Create username</p>
+            <p class="desc">Choose a username for you account.You can always change it later.</p>
+            <input type="text" class="usrname" placeholder="Username">
+            <p class="desc sm">By signing up ,you agree to our <a>Terms</a> , <a>Privacy Policy</a> and <a>Cookies Policy</a> </p>
+            <button class="next fiv disable">Next</button>
+        </div>
+    </section>
 <script src="./script.js"></script>
+<script src="./seciton.js"></script>
 </body>
 </html>

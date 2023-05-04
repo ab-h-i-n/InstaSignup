@@ -5,7 +5,7 @@ const emailform = document.querySelector("#email");
 const phninpt = document.querySelector("#phone input");
 const emailinpt = document.querySelector("#email input");
 const domains = document.querySelectorAll(".domain");
-const nextbtn = document.querySelector(".next");
+
 
 emailbtn.addEventListener("click", () => {
   phonebtn.classList.remove("active");
@@ -66,3 +66,4 @@ function unhideall() {
     domain.classList.remove("hidden");
   });
 }
+
