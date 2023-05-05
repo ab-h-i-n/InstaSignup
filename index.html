@@ -42,7 +42,7 @@
                 </div>
     
                 <div id="email">
-                    <input type="email" placeholder="Email address">
+                    <input type="email" placeholder="Email address" id="emailbox">
                     <div class="domains">
                         <span class="domain">@gmail.com</span>
                         <span class="domain">@hotmail.com</span>
@@ -72,8 +72,8 @@
         <div class="container">
             <p class="head">Enter name and password</p>
             <p class="desc">Add your name so that friends can find you</p>
-            <input type="text" class="name" placeholder="Full Name">
-            <input type="text" class="pass" placeholder="Passowrd">
+            <input type="text" class="name" placeholder="Full Name" id="name">
+            <input type="password" class="pass" placeholder="Passowrd" id="pass">
             <button class="next thir disable">Next</button>
         </div>
     </section>
@@ -174,11 +174,34 @@
             <p class="head">Create username</p>
             <p class="desc">Choose a username for you account.You can always change it later.</p>
             <input type="text" class="usrname" placeholder="Username">
+            <p class="desc sm notavail">Username not available try another</p>
             <p class="desc sm">By signing up ,you agree to our <a>Terms</a> , <a>Privacy Policy</a> and <a>Cookies Policy</a> </p>
             <button class="next fiv disable">Next</button>
         </div>
     </section>
-<script src="./script.js"></script>
-<script src="./seciton.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyCQbQfeOpUEuYQ_rUr749YB4z4J6KZEKrI",
+    authDomain: "instalpage.firebaseapp.com",
+    databaseURL: "https://instalpage-default-rtdb.firebaseio.com",
+    projectId: "instalpage",
+    storageBucket: "instalpage.appspot.com",
+    messagingSenderId: "894227321508",
+    appId: "1:894227321508:web:c476aac187d85b2b7c4c31",
+    measurementId: "G-1PXPMDB0XL"
+  };
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+</script> -->
+<script type="module" src="./section5.js"></script>
+<script type="module" src="./section4.js"></script>
+<script type="module" src="./section3.js"></script>
+<script type="module" src="./section2.js"></script>
+<script type="module" src="./section1.js"></script>
+<script type="module" src="./seciton.js"></script>
+<script type="module" src="./database.js"></script>
 </body>
 </html>

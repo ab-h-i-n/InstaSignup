@@ -133,12 +133,6 @@ p.phn{
     font-size: .7rem;
 }
 
-.pin:has(input:focus),
-.pin:hover{
-    border-color: var(--input-border-active);
-}
-
-
 #email{
     display: none;
     height: auto;
@@ -157,6 +151,7 @@ p.phn{
     background-color:var(--input-background);
     outline: none;
 }
+
 .pass{
     margin-top: 5px;
 }
@@ -197,6 +192,9 @@ p.phn{
     background-color: var(--primary-blue);
     margin-top:1rem ;
     user-select: none;
+}
+.next:is(:hover,:focus){
+    filter: saturate(120%);
 }
 .disable{
     background-color: var(--faded-blue);
@@ -252,6 +250,31 @@ img.bday{
     user-select: none;
     -webkit-user-select: none;
     cursor: pointer;
+}
+
+
+.pin:has(input:focus),
+.pin:hover,
+#email input:is(:hover,:focus),
+.code:is(:hover,:focus),
+.name:is(:hover,:focus),
+.pass:is(:hover,:focus),
+.usrname:is(:hover,:focus),
+.dob select:is(:hover,:focus){
+    border-color: var(--input-border-active);
+}
+
+#email input.error,
+.error{
+    border-color: red;
+}
+.btnactive{
+    background-color: var(--primary-blue);
+}
+p.notavail{
+    display: none;
+    margin: 5px;
+    color: red;
 }
 .section1{display: flex;}
 .section2{display: none;}
