@@ -15,16 +15,17 @@ const observer = new IntersectionObserver(entries => {
 });
 observer.observe(section2);
 
+
 import { changeSec } from "./seciton.js";
-
-
 codeinpt.addEventListener("change",()=>{
   
   if(codeinpt.value == otp){
+
     nextbtn.classList.add("btnactive");
     nextbtn.addEventListener("click",()=>{
       changeSec(currentsec);
     })
+    
   }
   else{
     nextbtn.classList.remove("btnactive");

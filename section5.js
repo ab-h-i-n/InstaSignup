@@ -1,4 +1,5 @@
 import { changeSec } from "./seciton.js";
+import { savedata } from "./database.js";
 
 const usrnameinpt = document.querySelector(".usrname");
 const nextbtn = document.querySelector(".section5 .next");
@@ -16,14 +17,16 @@ const observer = new IntersectionObserver(entries => {
 });
 observer.observe(section5);
 
+
 usrnameinpt.addEventListener("change",()=>{
-  var  valid = false;  //usrIsValid(usrnameinpt.value);
+  var  valid = true;  //usrIsValid(usrnameinpt.value);
   nextbtn.classList.add("btnactive");
 
   if(valid){
     notavail.style.display = 'none';
     nextbtn.addEventListener("click",()=>{
-        window.location.replace('https://abhin-2122003.github.io/InstaLPage/');
+      nextbtn.innerHTML = '<img src="./images/spinner.gif">'
+      savedata();
     })
   }
   else{

@@ -192,6 +192,9 @@ p.phn{
     background-color: var(--primary-blue);
     margin-top:1rem ;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .next:is(:hover,:focus){
     filter: saturate(120%);
@@ -275,6 +278,10 @@ p.notavail{
     display: none;
     margin: 5px;
     color: red;
+}
+.next img{
+    filter:brightness(120%);
+    width: 20px;
 }
 .section1{display: flex;}
 .section2{display: none;}
