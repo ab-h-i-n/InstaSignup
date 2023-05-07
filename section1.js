@@ -74,8 +74,10 @@ emailinpt.addEventListener("change", () => {
     if (domainValue) {
       domains.forEach((domain) => {
         if (domain.innerText !== "@" + domainValue) {
+          nextbtn.classList.remove("disable");
           domain.classList.add("hidden");
         } else {
+          nextbtn.classList.add("disable");
           unhideall();
         }
       });
